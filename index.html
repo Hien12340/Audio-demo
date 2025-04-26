@@ -63,6 +63,16 @@
                 grid-template-columns: repeat(5, 1fr);
             }
             
+            /* Đặc biệt cho phần "Nhạc cụ gốc" */
+            .original-instruments .audio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            /* Đảm bảo mỗi item trong phần "Nhạc cụ gốc" chiếm 2.5 cột */
+            .original-instruments .audio-item {
+                grid-column: span 2.5;
+            }
+            
             main {
                 padding: 2rem;
             }
@@ -119,7 +129,7 @@
         <div class="container">
 
             <!-- Nhạc cụ gốc -->
-            <div class="voice-container">
+            <div class="voice-container original-instruments">
                 <h2 class="voice-title">Nhạc cụ gốc</h2>
                 <div class="audio-grid">
                     <div class="audio-item original">
